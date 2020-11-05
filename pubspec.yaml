@@ -18,9 +18,23 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  msix: ^0.0.10
 
 flutter:
   uses-material-design: true
   assets:
     - assets/palettes.json
+
+msix_config:
+  display_name: Particle Clock
+  publisher_name: Flutter
+  identity_name: Google.Flutter.ParticleClock
+  msix_version: 1.0.0.0
+  #certificate_path: C:/<PathToCertificate>/<MyCertificate.pfx>
+  #certificate_password: 1234 (require if using .pfx certificate)
+  #certificate_subject: CN=MyName
+  #logo_path: C:\<PathToIcon>\<Logo.png>
+  #start_menu_icon_path: C:\<PathToIcon>\<Icon.png>
+  #tile_icon_path: C:\<PathToIcon>\<Icon.png>
+  icons_background_color: ffffff
+  architecture: x64
